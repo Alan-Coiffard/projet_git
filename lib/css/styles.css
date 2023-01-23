@@ -1,4 +1,31 @@
-html, body {
+:root {
+    --validation-color: green;
+    --notvalidation-color: red;
+}
+
+html,
+body {
     padding: 0;
     margin: 0;
+}
+
+.msg_valid,
+.msg_nvalid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    padding: 5px;
+
+}
+
+.msg_valid {
+    background: var(--validation-color);
+}
+
+.msg_nvalid {
+    background: var(--notvalidation-color);
 }
