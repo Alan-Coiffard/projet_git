@@ -6,4 +6,5 @@ class UserController {
     public function index() {
         require_once 'views/users/index.php';
     }
+    
 }
