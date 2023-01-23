@@ -16,6 +16,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="messages">
+                          
                         </div>
                     </div>
                 </div>
@@ -23,9 +24,9 @@
         </div>
         <div class="row">
             <div class="col-md-8 offset-md-2 my-3">
-                <form id="chat-form">
+                <form id="chat-form" action="?controller=chat&action=envoieMessage" method="post">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="message" placeholder="Entrez votre message">
+                        <input type="text" class="form-control" id="message" name="message" placeholder="Entrez votre message">
                     </div>
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
