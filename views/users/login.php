@@ -13,7 +13,7 @@
 <body class="d-flex align-items-center">
     <div class="container">
         <div class="jumbotron">
-            <button href="index.php" class="btn btn-secondary">Retour</button>
+            <a href="index.php"><button class="btn btn-secondary">Retour</button></a>
             <h1 class="display-4">Connexion</h1>
             <form action="?controller=user&action=login" method="post">
                 <div class="form-group">
