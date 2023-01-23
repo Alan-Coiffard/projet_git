@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+body {
+    height: 100vh;    
+}
+
 .msg_valid,
 .msg_nvalid {
     position: fixed;

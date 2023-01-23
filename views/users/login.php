@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./lib/css/styles.css">
 </head>
 
-<body>
+<body class="d-flex align-items-center">
     <div class="container">
         <div class="jumbotron">
+            <button href="index.php" class="btn btn-secondary">Retour</button>
             <h1 class="display-4">Connexion</h1>
             <form action="?controller=user&action=login" method="post">
                 <div class="form-group">
