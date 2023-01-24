@@ -15,9 +15,19 @@
             <div class="col-md-8 offset-md-2">
                 <div class="card">
                     <div class="card-body">
-                        <div class="messages">
-                          
-                        </div>
+                    <select id="messages" class="form-control" size="10">
+                        <?php 
+                            $res = getMessages(); 
+                            
+                            if ($res->num_rows > 0) {
+                                while($row = $res->fetch_assoc()) {
+                                    echo '<option>' . $row["timestamp"] . ': ' . $row["message"]  . '</option>';
+                                }
+                            } else {
+                                echo '<p>Aucun message à afficher.</p>';
+                            }
+                        ?>
+                       </select>
                     </div>
                 </div>
             </div>

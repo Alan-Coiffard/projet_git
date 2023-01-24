@@ -14,15 +14,5 @@ function getMessages(){
     $sql = "SELECT * FROM messages ORDER BY timestamp ASC";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            echo '<div class="message">';
-            echo '<p>' . $row["message"] . '</p>';
-            echo '<span class="timestamp">' . $row["timestamp"] . '</span>';
-            echo '</div>';
-        }
-    } else {
-        echo '<p>Aucun message à afficher.</p>';
-    }
+    return $result;
 }
-getMessages();
