@@ -7,7 +7,7 @@ class UserController
     public function index()
     {
         if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
-            require_once 'views/users/chat.php';
+            require_once 'views/chat/chat.php';
         } else {
             require_once 'views/users/index.php';
         }
