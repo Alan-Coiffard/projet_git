@@ -16,6 +16,9 @@
             <hr class="my-4">
             <p>Cliquez sur le bouton ci-dessous pour vous connecter.</p>
             <a class="btn btn-primary btn-lg" href="?action=login&controller=user" role="button">Connexion</a>
+            <hr class="my-4">
+            <p>Vous n'avez pas de compte ? Cliquez sur le bouton ci-dessous pour vous inscrire.</p>
+            <a class="btn btn-primary btn-lg" href="?action=inscription&controller=user" role="button">S'inscrire</a>
         </div>
     </div>
 </body>
