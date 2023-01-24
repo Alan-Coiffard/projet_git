@@ -11,6 +11,7 @@ class UserController
         } else {
             require_once 'views/users/index.php';
         }
+
     }
 
     public function login()

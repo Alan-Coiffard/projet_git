@@ -36,3 +36,4 @@ function getConnexion($login, $pwd)
     }
     return $res;
 }
+
