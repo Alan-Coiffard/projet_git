@@ -15,14 +15,14 @@
         <div class="container">
             <div class="jumbotron">
                 <h1 class="display-4">Inscription</h1>
-                <form action="" method="post">
+                <form action="?controller=user&action=inscription" method="post">
                     <div class="form-group">
                         <label for="username">Nom d'utilisateur</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Entrez un nom d'utilisateur">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Entrez un nom d'utilisateur" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Mot de passe</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Entrez un mot de passe">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Entrez un mot de passe" required>
                     </div>
                     <button type="submit" class="btn btn-primary">S'inscrire</button>
                 </form>
