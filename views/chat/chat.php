@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <a href="index.php?controller=user&action=logout"><button>Déconnexion</button></a>
+        <a href="index.php?controller=user&action=logout"><button class="btn btn-secondary">Déconnexion</button></a>
         <h1 class="text-center my-3">Chat en ligne</h1>
         <div class="row">
             <div class="col-md-8 offset-md-2">
