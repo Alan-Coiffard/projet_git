@@ -30,6 +30,13 @@ class UserController
             require_once 'views/users/login.php';
         }
     }
+
+    public function logout() {
+        session_destroy();
+        header('Location: index.php');
+        exit;
+    }
+
     
     public function inscription(){
         if (isset($_POST['username'])  && isset($_POST['password'])) {       
