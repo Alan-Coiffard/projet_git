@@ -30,4 +30,18 @@ class UserController
             require_once 'views/users/login.php';
         }
     }
+    
+    public function inscription(){
+        if (isset($_POST['username'])  && isset($_POST['password'])) {       
+           if(checkUsername($_POST['username'])){
+                require_once 'views/users/inscription.php';
+                echo "<p class='msg_error'>Le nom d'utilisateur choisi existe déjà</p>";
+           }else{
+            inscription($_POST['username'], $_POST['password']);
+            getConnexion($_POST['username'], $_POST['password']);
+           }
+        } else {
+            require_once 'views/users/inscription.php';
+        }
+    }
 }
