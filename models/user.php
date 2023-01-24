@@ -37,3 +37,14 @@ function getConnexion($login, $pwd)
     return $res;
 }
 
+function checkUsername($login)
+{
+    global $conn;
+    $res=false;
+    $sql = "SELECT username FROM users WHERE username = '$login'";
+    $result = $conn -> query($sql);
+    if($result->num_rows > 0){
+        $res=true;
+    }
+    return $res; 
+}
