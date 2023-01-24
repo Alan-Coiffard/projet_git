@@ -48,3 +48,13 @@ function checkUsername($login)
     }
     return $res; 
 }
+
+function inscription($login, $pwd)
+{
+    global $conn;
+    $pwd = sha1($pwd);
+    $res=true;
+    $sql = "INSERT INTO users (username, password) VALUES ('$login', '$pwd')";
+    $result = $conn -> query($sql);
+    return $res; 
+}
