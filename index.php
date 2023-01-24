@@ -3,6 +3,9 @@ session_start();
 
 require_once 'config.php';
 require_once 'controllers/userController.php';
+require_once 'controllers/chatController.php';
+
+
 
 $controller = 'user';
 $action = 'index';

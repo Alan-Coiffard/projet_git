@@ -37,3 +37,24 @@ function getConnexion($login, $pwd)
     return $res;
 }
 
+function checkUsername($login)
+{
+    global $conn;
+    $res=false;
+    $sql = "SELECT username FROM users WHERE username = '$login'";
+    $result = $conn -> query($sql);
+    if($result->num_rows > 0){
+        $res=true;
+    }
+    return $res; 
+}
+
+function inscription($login, $pwd)
+{
+    global $conn;
+    $pwd = sha1($pwd);
+    $res=true;
+    $sql = "INSERT INTO users (username, password) VALUES ('$login', '$pwd')";
+    $result = $conn -> query($sql);
+    return $res; 
+}
