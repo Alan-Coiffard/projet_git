@@ -7,8 +7,8 @@ require_once 'controllers/chatController.php';
 
 
 
-$controller = 'chat';
-$action = 'chat';
+$controller = 'user';
+$action = 'index';
 
 if (isset($_GET['controller']) && isset($_GET['action'])) {
     $controller = $_GET['controller'];
