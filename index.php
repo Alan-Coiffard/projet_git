@@ -3,9 +3,12 @@ session_start();
 
 require_once 'config.php';
 require_once 'controllers/userController.php';
+require_once 'controllers/chatController.php';
 
-$controller = 'user';
-$action = 'index';
+
+
+$controller = 'chat';
+$action = 'chat';
 
 if (isset($_GET['controller']) && isset($_GET['action'])) {
     $controller = $_GET['controller'];
